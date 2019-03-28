@@ -3,17 +3,88 @@
 
 /*==========  Desktop First  ==========*/
 
+@media screen and (max-width: 1600px)
+  .top-line
+    .more-screen
+      display: none
+    .less-screen
+      display: inline-block
+      left: 50px
+      right: auto
+
+  .socials
+    position: relative
+    right: 0
+    float: right
+    top: 15px
+    .soc-item
+      margin: 0 6px
+
 // ≥1200px
 +media-breakpoint-down(lg)
+  .top-line
+    .less-screen
+      left: 30px
+
+  .main-mnu
+    li
+      a
+        margin: 0 15px
+        font-size: 14px
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .hamburger
+    display: inline-block
+
+  .main-mnu
+    display: none
+
+  .top-line
+    .less-screen
+      left: auto
+      right: 10px
+    .logo
+      margin-left: 0
+
+  .top-addr
+    margin-top: 20px
+
+  .top-phones
+    a
+      display: inline-block
+    margin-top: 20px
+    text-align: right
 
 // ≥768px
 +media-breakpoint-down(sm)
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .top-line
+    padding: 8px 0
+    .less-screen
+      position: relative
+      margin-top: 20px
+      margin-left: auto
+      margin-right: auto
+      display: block
+      max-width: 190px
+      left: 0
+      top: 0
+    .logo
+      text-align: center
+      display: block
+      margin-bottom: 5px
+      img
+        margin-left: auto
+        margin-right: auto
+  .top-addr
+    display: none
+  .top-phones
+    text-align: center
+    margin-top: 10px
 
 
 /*==========  Mobile First  ==========*/

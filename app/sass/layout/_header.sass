@@ -1,0 +1,141 @@
+.top-line
+  padding: 20px 0
+  .container
+    position: relative
+  .logo
+    display: inline-block
+    margin-left: 15px
+  .btn
+    padding: 12px 22px
+    position: absolute
+    right: -190px
+    top: calc(50% - 19px)
+  .less-screen
+    display: none
+
+.top-addr
+  font-size: 14px
+  line-height: 1.15
+
+.top-phones
+  a
+    display: block
+    +mt(.2s)
+    color: $text
+    &:hover
+      color: $accent-darkgreen
+
+.top-phone
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 5px
+
+.top-whats
+  font-size: 19px
+
+.whats
+  padding-left: 22px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 15px
+    height: 15px
+    +bg-cover
+    background-image: url('../img/icons/whats-icon.png')
+    left: 0
+    top: 5px
+
+.mnu-line
+  background-color: #333
+  .container
+    position: relative
+
+.main-mnu
+  line-height: 1
+  text-align: center
+  li
+    display: inline-block
+    a
+      display: inline-block
+      padding: 22px 0 18px
+      margin: 0 26px
+      font-size: 16px
+      text-transform: uppercase
+      +mt(.2s)
+      border-bottom: 4px solid transparent
+      color: #fff
+      &:hover
+        color: #fff
+        border-color: #4caf50
+      &:focus, &:active
+        color: #fff
+    &:first-child
+      a
+        margin-left: 0
+    &:last-child
+      a
+        margin-right: 0
+
+.socials
+  position: absolute
+  right: -160px
+  top: calc(50% - 15px)
+  .soc-item
+    display: inline-block
+    margin: 0 9px
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+
+.hamburger
+  display: none
+  position: relative
+  top: 4px
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+  background-color: #4caf50
+
+.hamburger.is-active:hover, .hamburger:hover
+  opacity: 1
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+  background-color: #4caf50
+
+//mmenu customization start
+.mm-menu_theme-dark
+  background-color: #3b342f
+  text-transform: uppercase
+
+.mm-logo
+  display: block
+  margin: 0 auto
+  transform: scaleY(.475)
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: rgba(#fff, .3)
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+
+.mm-navbar
+  border: none
+
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 20px
+  color: #fff
+  letter-spacing: 2px
+
+.mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+  color: #fff
+  font-weight: 700
+//mmenu customization end
+
+
