@@ -1,0 +1,64 @@
+.s-videocoms
+  .btn-wrap
+    margin-top: 20px
+
+.videocoms-wrap
+  margin-top: 50px
+
+.videocom-item
+  margin-right: 12px
+  box-shadow: 9px -9px $accent-lightbrown
+  margin-bottom: 30px
+  .video-title
+    font-size: 16px
+    color: #fff
+    font-weight: 700
+    line-height: 1
+    position: absolute
+    left: 15px
+    bottom: 15px
+    width: calc(100% - 30px)
+    overflow: hidden
+    z-index: 2
+    white-space: nowrap
+
+.video-item
+  height: 205px
+  width: 100%
+  background-color: #000
+  +bg-cover
+.thumbnail-container
+  +bg-cover
+  position: relative
+  &:after
+    +overlay()
+    +mt(.3s)
+    background-color: rgba(#000, .4)
+    opacity: 1
+    z-index: 1
+
+
+.btn-play
+  position: absolute
+  width: 60px
+  height: 60px
+  background-color: transparent
+  border: 1px solid #fff
+  border-radius: 50%
+  left: calc(50% - 30px)
+  top: calc(50% - 50px)
+  z-index: 3
+  cursor: pointer
+  +mt(.3s)
+  &:after
+    content: ''
+    position: absolute
+    border: 15px solid transparent
+    border-left: 22px solid #fff
+    left: 22px
+    top: 14px
+    +mt(.3s)
+  &:hover
+    border-color: #977b61
+    &:after
+      border-left-color: #977b61
