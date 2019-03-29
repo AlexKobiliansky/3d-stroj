@@ -105,6 +105,12 @@ $(document).ready(function(){
             $('.project-item-title').matchHeight({byRow: true});
         }
 
+        if ($(window).width()>=480) {
+            $('.team-item-lastname').matchHeight({byRow: true});
+            $('.team-item-name').matchHeight({byRow: true});
+            $('.team-item-post').matchHeight({byRow: true});
+        }
+
         $('.intro-news-slide .slide-title').height('auto').equalHeights();
 
     }
