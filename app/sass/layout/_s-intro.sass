@@ -1,0 +1,103 @@
+.s-intro
+  position: relative
+
+.intro-slide
+  height: 710px
+  +bg-cover
+  padding: 140px 0 30px
+  font-size: 20px
+  line-height: 1.2
+  h1
+    font-size: 48px
+    font-weight: 700
+    margin-bottom: 30px
+  .btn
+    margin-top: 70px
+    font-size: 16px
+
+.intro-slider
+  position: relative
+  .slick-arrow
+    position: absolute
+    width: 64px
+    height: 64px
+    background-color: #fff
+    z-index: 10
+    box-shadow: none
+    border: none
+    background-repeat: no-repeat
+    background-position: center center
+    cursor: pointer
+    +mt(.2s)
+    bottom: 0
+    right: 315px
+    &:hover
+      background-color: $accent-darkgreen
+  .slick-prev
+    background-image: url('../img/icons/slide-prev.png')
+    right: 381px
+    &:hover
+      background-image: url('../img/icons/slide-prev-active.png')
+  .slick-next
+    background-image: url('../img/icons/slide-next.png')
+    &:hover
+      background-image: url('../img/icons/slide-next-active.png')
+
+
+.intro-news-slider
+  background-color: #fff
+  padding-bottom: 20px
+  width: 445px
+  position: absolute
+  bottom: 130px
+  right: 0
+  z-index: 3
+  .slick-dots
+    position: absolute
+    bottom: 17px
+    left: 170px
+    li
+      display: inline-block
+      font-size: 0
+      button
+        height: 8px
+        width: 8px
+        background-color: #878787
+        border: none
+        box-shadow: none
+        margin: 0 4px
+        border-radius: 50%
+        padding: 0
+        cursor: pointer
+      &.slick-active
+        button
+          background-color: $accent-darkgreen
+
+.intro-news-slide
+  background-color: #fff
+  padding: 25px
+  outline: none
+  display: table
+  .slide-img
+    float: left
+    height: 83px
+    width: 117px
+    margin-right: 27px
+    display: table-cell
+    +bg-cover
+  .slide-content-wrap
+    display: table-cell
+  .slide-title
+    font-weight: 700
+    margin-bottom: 3px
+    line-height: 1
+  .slide-desc
+    font-size: 14px
+    line-height: 1.1
+    height: 31px
+    overflow: hidden
+    p
+      margin-bottom: 0
+  .slide-date
+    margin-top: 3px
+    color: $accent-darkgreen
