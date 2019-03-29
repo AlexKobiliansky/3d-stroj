@@ -65,6 +65,16 @@ p
 
 section
   padding: 60px 0 50px
+  &.with-bg
+    background-repeat: no-repeat
+    background-position: calc(50% + 25px) center
+    background-image: url('../img/bg-page.png')
+
+
+.s-creamy
+  background-color: $accent-creamy
+  &.with-bg
+    background-image: url('../img/bg-page-creamy.png')
 
 .section-title
   margin-bottom: 20px
@@ -76,10 +86,3 @@ section
 
 .btn-wrap
   text-align: center
-
-body
-  .container
-  background-image: url('../img/bg-page.png')
-  background-size: 1150px
-  background-repeat: no-repeat
-  background-position: calc(50% + 15px) 1250px

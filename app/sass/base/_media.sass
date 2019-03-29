@@ -22,6 +22,25 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .project-item
+    .project-item-img
+      &:before
+        transform: none
+        left: 0
+        top: 0
+        bottom: 0
+        right: 0
+        opacity: 0
+      &:after
+        display: none
+    &:hover
+      .project-item-img
+        &:before
+          left: 0
+          top: 0
+          opacity: .3
+
   .top-line
     .less-screen
       left: 30px
@@ -34,6 +53,38 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-woodprojects
+    .gallery-wrap
+      flex-direction: row
+      height: auto
+      justify-content: space-between
+    .gallery-item, .gallery-item:first-child
+      width: calc(50% - 10px)
+      margin-left: 0
+      height: 230px
+      padding: 15px
+      .bottom
+        left: 15px
+        bottom: 15px
+      .gallery-item-title
+        font-size: 16px
+        margin-bottom: 0
+      .gallery-info
+        font-size: 14px
+      .info-item
+        span
+          display: none
+      .serv-item
+        padding: 5px 8px 7px
+        font-size: 11px
+        &:before
+          width: 12px
+          height: 12px
+          margin-right: 6px
+
+  .section-title
+    text-align: center
 
   .hamburger
     display: inline-block
@@ -59,6 +110,10 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  section.with-bg, .s-creamy.with-bg
+    background-image: none
+
   .intro-slide
     padding-top: 50px
     h1
@@ -81,9 +136,25 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-building
+    .projects-wrap
+      margin-top: 40px
+
+  .s-woodprojects
+    .gallery-wrap
+      margin-top: 40px
+    .gallery-item, .gallery-item:first-child
+      width: 100%
+      margin-left: 0
+      height: 230px
+      padding: 15px
+
   .section-title
     h2
       font-size: 24px
+
+  .s-intro
+    box-shadow: 0px 5px 25px 5px rgba(#000, .1)
 
   .intro-slider
     .slick-arrow
