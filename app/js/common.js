@@ -101,8 +101,8 @@ $(document).ready(function(){
 
     function heightses() {
 
-        if ($(window).width()<480) {
-
+        if ($(window).width()>=768) {
+            $('.project-item-title').matchHeight({byRow: true});
         }
 
         $('.intro-news-slide .slide-title').height('auto').equalHeights();

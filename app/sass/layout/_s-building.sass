@@ -1,0 +1,81 @@
+.s-building
+  .projects-wrap
+    margin-top: 60px
+  .btn-wrap
+    margin-top: 25px
+
+.project-item
+  margin: 0 10px 30px
+  color: #000
+  font-size: 14px
+  line-height: 1.3
+  display: block
+  +mt(.5s)
+  &-img
+    height: 205px
+    +bg-cover
+    position: relative
+    overflow: hidden
+    &:before
+      content: ''
+      position: absolute
+      width: 120%
+      height: 120%
+      background-color: $accent-darkgreen
+      transform: rotate(-29deg)
+      top: -280px
+      left: -230px
+      +mt(.3s)
+      opacity: .2
+    &:after
+      content: ''
+      position: absolute
+      width: 120%
+      height: 120%
+      background-color: $accent-lightgreen
+      transform: rotate(-29deg)
+      top: 280px
+      left: 230px
+      +mt(.3s)
+      opacity: .2
+  &-content
+    background-color: $accent-lightgrey
+    padding: 15px 35px 25px
+    text-align: center
+  &-title
+    font-weight: 700
+    font-size: 16px
+    margin-bottom: 10px
+  &-size
+    margin-bottom: 10px
+  &-price
+    span
+      font-size: 24px
+      font-weight: 700
+      margin-top: 5px
+  span
+    display: block
+  .btn
+    display: inline-block
+    padding: 10px 24px
+    width: 140px
+    position: absolute
+    left: calc(50% - 70px)
+    top: calc(50% - 17px)
+    z-index: 2
+    transition-delay: 5s
+    transition: opacity .5s ease-in
+    opacity: 0
+  &:hover
+    box-shadow: 0 0 25px 5px rgba(#000, .1)
+    .project-item-img
+      &:before
+        top: -127.5px
+        left: -96.5px
+      &:after
+        top: 86.5px
+        left: 24.5px
+    .btn
+      opacity: 1
+
+
