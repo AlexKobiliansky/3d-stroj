@@ -1,0 +1,27 @@
+.s-breadcrumbs
+  line-height: 1
+  padding: 30px 0
+  a
+    color: #000
+    +mt(.3s)
+    font-size: 14px
+    display: inline-block
+    margin: 0 13px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      height: 100%
+      width: 1px
+      background-color: #000
+      right: -15px
+      top: 0
+    &:first-child
+      margin-left: 0
+    &:last-child
+      &:after
+        display: none
+    &:hover
+      color: $accent-darkgreen
+      &:after
+        color: inherit
