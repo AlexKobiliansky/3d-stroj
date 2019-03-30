@@ -23,6 +23,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .about-img
+    width: calc((100% - 940px)/2 + 450px)
+
   .map-block
     left: 0
 
@@ -69,6 +72,14 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .about-img
+    position: relative
+    top: 0
+    right: 0
+    height: 500px
+    width: 100%
+    margin-top: 30px
 
   .foot-phone
     font-size: 22px
@@ -229,6 +240,14 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .page-title
+    margin-bottom: 35px
+    h1
+      font-size: 24px
+
+  .about-img
+    height: 350px
 
   .map-block
     padding: 15px
