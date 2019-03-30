@@ -1,0 +1,73 @@
+.s-objectsmap
+  height: 480px
+  position: relative
+
+#objectsmap
+  height: 100%
+  position: relative
+  background-image: url('../img/bg-objectsmap.jpg')
+  +bg-cover
+
+
+.baloon-item
+  width: 187px
+
+.baloon-img
+  height: 116px
+  +bg-cover
+  margin-bottom: 12px
+
+.baloon-title
+  font-size: 16px
+  font-weight: 700
+  color: $text
+  +mt(.3s)
+  &:hover
+    color: $accent-darkgreen
+
+.loader
+  position: absolute
+  top: 0
+  left: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba(0,0,0,.55)
+  z-index: -2
+
+.loader:after,
+.loader:before
+  box-sizing: border-box
+
+.loader.is-active
+  top: 0
+  opacity: 1
+  z-index: 2
+
+.loader-default:after
+  position: absolute
+  top: calc(50% - 24px)
+  left: calc(50% - 24px)
+  width: 48px
+  height: 48px
+  content: ''
+  animation: rotation 1s linear infinite
+  border: solid 8px #ffffff
+  border-left-color: transparent
+  border-radius: 50%
+
+@keyframes rotation
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(359deg)
+
+@keyframes blink
+  from
+    opacity: .5
+  to
+    opacity: 1
