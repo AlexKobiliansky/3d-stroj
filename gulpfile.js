@@ -63,7 +63,7 @@ gulp.task('rsync', function() {
 	.pipe(rsync({
 		root: 'app/',
 		hostname: 'alexko89@alexko89.beget.tech',
-		destination: 'demos.alexko89.beget.tech/public_html/dirname/',
+		destination: 'demos.alexko89.beget.tech/public_html/3d-stroj/',
 		// include: ['*.htaccess'], // Includes files to deploy
 		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
 		recursive: true,
